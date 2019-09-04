@@ -9,6 +9,7 @@ void SECR_CrcPolynomialGenerate(u32* PolynomialPtr,u8 CrcLengthInBits)
 	DevisorValue = (u32)(GetPower(2,CrcLengthInBits)) - 1;
 	*PolynomialPtr = (rand() % DevisorValue) +0x10000 ;
 }
+/**/
 /***************************************************************************************/
 void SECR_GnerateCrc(const u8* PayloadPtr,u16 PayloadLength, u16* CrcPtr, u32 CrcPoly)
 {
