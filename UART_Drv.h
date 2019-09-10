@@ -11,8 +11,8 @@
 #include "Basic_Types.h"
 typedef void (*tCbkFn)(void);
 void UART_Init(void);
-void UART_TxBuffer(const u8* Buffer,u16 BufferLength);
-void UART_StartReception(u8* Buffer,u16 BufferLength,tCbkFn RxcCbkFnPtr);
+void UART_TxBuffer(const char* Buffer,u16 BufferLength);
+void UART_StartReception(char* Buffer,u16 BufferLength,tCbkFn RxcCbkFnPtr);
 u16 UART_GetNumOfRxbytes(void);
 void UART_StopRception(void);
 

@@ -7,6 +7,7 @@
 #include "PWM.h"
 #include "GPT.h"
 #include "interrupt.h"
+#include <stdlib.h>
 
 void Cyclic30ms(void);
 void main(void);
